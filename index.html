@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">s
+<title>Página principal</title>
+<link href="EstilosCSS.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="imagenfondopagina">
+<p id="titulopagina">&nbsp;Horus... de escenario en escenario...</p>
+<header>
+<nav> 
+	<li id="seleccion"><a href="index.html">Principal</a></li>
+    <li><a href="Conciertos.html">Conciertos</a></li>
+    <li><a href="Contacto.html">Contacto</a></li>
+</nav>
+</header>
+<br>
+<br>
+<br>
+<p id="parrafoprincipal">
+Somos un grupo burgalés integrado por cinco grandes músicos de entre 16 y 19 años, que desde hace mucho tiempo llevamos dedicándonos con gran pasión a este maravilloso arte llamado música. Recorremos España de escenario en escenario, de bar en bar, dando a conocer nuestra música. Nuestras mayores influencias son el Rock y el Hard Rock clásico. ¡Encantados de conocerte!
+</p>
+<p id="textoreloj">Tiempo restante para finalizar el día...</p>
+<form id="reloj" name="Reloj">
+<input type="text" disabled size="7" name="tiempo" value="mm:hh:ss" title="Tiempo restante para finalizar el día">
+<script language="JavaScript">
+<!--
+var tiempoAtras;
+
+updateReloj();
+function updateReloj() {
+var tiempo = new Date();
+var hora = 23-tiempo.getHours();
+var minutos = 59-tiempo.getMinutes();
+var segundos = 59-tiempo.getSeconds();
+
+tiempoAtras= (hora < 10) ? hora :hora;
+tiempoAtras+= ((minutos < 10) ? ":0" : ":") + minutos;
+tiempoAtras+= ((segundos < 10) ? ":0" : ":") + segundos;
+
+document.Reloj.tiempo.value = tiempoAtras;
+
+setTimeout("updateReloj()",1000);
+}
+//-->
+</script>
+</form>
+<br>
+<img id="imagenprincipal" src="images/Festify-Guns-n-ROses.jpg">
+<br>
+<br>
+<br>
+<div id="pieimagenprincipal">
+Sobre estas líneas podrás observar una foto que nos hicimos en nuestros inicios... ¡muy conocida por cierto!
+</div>
+</body>
+</html>

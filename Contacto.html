@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contacto</title>
+<link href="EstilosCSS.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="imagenfondopagina">
+<p id="titulopagina">&nbsp;Horus... de escenario en escenario...</p>
+<header>
+<nav> 
+	<li><a href="index.html">Principal</a></li>
+    <li><a href="Conciertos.html">Conciertos</a></li>
+    <li id="seleccion"><a href="Contacto.html">Contacto</a></li>
+</nav>
+
+</header>
+<br>
+<br>
+<br>
+<br>
+<p>
+	<form id="formcontacto" action="" method="get">
+    	<br>
+        <label for="nombre">&nbsp;&nbsp;&nbsp;Nombre:</label>
+    	<input type="text" name="nombre" maxlength="50"/> 
+        <br>
+        <br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" maxlength="50"/>
+        <br>
+        <br>
+        <label for="deseo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deseo:</label> 
+        <input type="radio" name="Entradas" value="Entradas">Comprar entradas
+        <input type="radio" name="Entradas" value="Otro"> Otro
+        <br>
+        <br>
+        <label for="correo">&nbsp;&nbsp;&nbsp;E-Mail:</label>
+        <input type="text" name="correo" />
+        <br>
+        <br>
+        <label for="mcontacto">Método de contacto:</label>
+        <br>
+        <br>
+        <select name="mcontacto">
+        	<option value="" selected="selected"> - selecciona -</option>
+            <option value="tfno">Teléfono</option>
+            <option value="mail">E-Mail</option>
+         </select>
+         <br>     
+         <br>       
+        <label for="descripcion">Descripción:</label>
+        <br>
+        <textarea name="descripcion" cols="40" rows="5"></textarea>
+        <br>
+        <br>
+        <input type="checkbox" name="Información sobre novedades" checked/> Deseo recibir información sobre próximos conciertos.
+        <br>
+        <input type="checkbox" name="Aceptar condiciones" /> Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos.
+        <br>
+        <br>
+        <input type="submit" value="Enviar"/>
+        <br>
+        <br>
+      
+	</form>
+</p>
+
+</body>
+</html>
